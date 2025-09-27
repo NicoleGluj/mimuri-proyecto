@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import TopBar from "./TopBar";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -27,24 +28,24 @@ const Header = () => {
         <nav className="hidden md:absolute md:flex md:left-1/2 md:transform md:-translate-x-1/2">
           <ul className="flex justify-center space-x-6 text-gray-500 font-medium text-sm uppercase">
             <li>
-              <a href="#inicio" className="hover:text-[#eb9665]">
+              <Link to="/" className="hover:text-[#eb9665]">
                 Inicio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#productos" className="hover:text-[#eb9665]">
+              <Link to="/productos" className="hover:text-[#eb9665]">
                 Productos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#nosotros" className="hover:text-[#eb9665]">
+              <Link to="/nosotros" className="hover:text-[#eb9665]">
                 Nosotros
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contacto" className="hover:text-[#eb9665]">
+              <Link to="/contacto" className="hover:text-[#eb9665]">
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -63,28 +64,50 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Menú desplegable móvil con animación suave y fondo incluido */}
-        <div className={`md:hidden absolute top-full left-0 w-full overflow-hidden z-50 transition-all duration-300 ease-in-out ${isOpen ? "max-h-96" : "max-h-0"}`}>
-          <ul className={`origin-top transform transition-all duration-300 ease-in-out bg-white shadow-md ${isOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"}`}>
+        {/* Menú desplegable móvil */}
+        <div
+          className={`md:hidden absolute top-full left-0 w-full overflow-hidden z-50 transition-all duration-300 ease-in-out ${isOpen ? "max-h-96" : "max-h-0"
+            }`}
+        >
+          <ul
+            className={`origin-top transform transition-all duration-300 ease-in-out bg-white shadow-md ${isOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
+              }`}
+          >
             <li>
-              <a href="#inicio" className="block py-4 text-center text-gray-500 font-medium text-sm uppercase hover:text-[#eb9665]" onClick={toggleMenu}>
+              <Link
+                to="/"
+                className="block py-4 text-center text-gray-500 font-medium text-sm uppercase hover:text-[#eb9665]"
+                onClick={toggleMenu}
+              >
                 Inicio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#productos" className="block py-4 text-center text-gray-500 font-medium text-sm uppercase hover:text-[#eb9665]" onClick={toggleMenu}>
+              <Link
+                to="/productos"
+                className="block py-4 text-center text-gray-500 font-medium text-sm uppercase hover:text-[#eb9665]"
+                onClick={toggleMenu}
+              >
                 Productos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#nosotros" className="block py-4 text-center text-gray-500 font-medium text-sm uppercase hover:text-[#eb9665]" onClick={toggleMenu}>
+              <Link
+                to="/nosotros"
+                className="block py-4 text-center text-gray-500 font-medium text-sm uppercase hover:text-[#eb9665]"
+                onClick={toggleMenu}
+              >
                 Nosotros
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contacto" className="block py-4 pb-7 text-center text-gray-500 font-medium text-sm uppercase hover:text-[#eb9665]" onClick={toggleMenu}>
+              <Link
+                to="/contacto"
+                className="block py-4 pb-7 text-center text-gray-500 font-medium text-sm uppercase hover:text-[#eb9665]"
+                onClick={toggleMenu}
+              >
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
