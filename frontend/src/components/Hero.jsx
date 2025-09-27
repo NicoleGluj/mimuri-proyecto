@@ -46,14 +46,14 @@ const Hero = () => {
         <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg ">
           Bienvenidos a Mimuri
         </h1>
-        <p className="text-lg md:text-2xl mb-6 drop-shadow-md">
-          Descubrí nuestros productos únicos
+        <p className="text-lg font-mono md:text-2xl mb-6 drop-shadow-md">
+          Diseño que acompaña la infancia
         </p>
-        <Link
+        {/* <Link
           to="/productos"
           className="bg-[#9373AC] bg-opacity-90 px-6 py-3 rounded-full font-semibold hover:bg-[#d87c4a] transition">
           Ver Productos
-        </Link>
+        </Link> */}
       </div>
 
       {/* Botones de navegación */}

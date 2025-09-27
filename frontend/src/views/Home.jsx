@@ -7,6 +7,7 @@ import setsImage from "../assets/images/carrousel/biblioteca.png";
 import bibliotecasImage from "../assets/images/carrousel/combo.png";
 import todosImage from "../assets/images/carrousel/espacio.png";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -57,12 +58,12 @@ const Home = () => {
             <div className="absolute bottom-0 w-full bg-white/60 bg-opacity-70 px-4 py-3 flex justify-center items-center">
               <h3 className="text-xl font-bold uppercase text-[#d97345]">Combos</h3>
             </div>
-            <a
-              href="/sets"
+            <Link
+              to="/productos"
               className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-[#EEB749] bg-opacity-30 text-white text-lg font-semibold"
             >
               Ver Combos
-            </a>
+            </Link>
           </div>
 
           {/* Banner Jugueteros */}
@@ -75,12 +76,12 @@ const Home = () => {
             <div className="absolute bottom-0 w-full bg-white/60 bg-opacity-70 px-4 py-3 flex justify-center items-center">
               <h3 className="text-xl font-bold uppercase text-[#d97345]">Jugueteros</h3>
             </div>
-            <a
-              href="/bibliotecas"
+            <Link
+              to="/productos"
               className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-[#A4CBC7] bg-opacity-30 text-white text-lg font-semibold"
             >
               Ver Jugueteros
-            </a>
+            </Link>
           </div>
 
           {/* Banner Productos */}
@@ -93,15 +94,17 @@ const Home = () => {
             <div className="absolute bottom-0 w-full bg-white/60 bg-opacity-70 px-4 py-3 flex justify-center items-center">
               <h3 className="text-xl font-bold uppercase text-[#d97345]">Productos</h3>
             </div>
-            <a
-              href="/productos"
+            <Link
+              to="/productos"
               className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-[#F0655E] bg-opacity-30 text-white text-lg font-semibold"
             >
               Ver Productos
-            </a>
+            </Link>
           </div>
         </div>
       </section>
+
+
 
       <Footer />
     </>
