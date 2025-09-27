@@ -16,28 +16,28 @@ const Home = () => {
 
       <Hero />
 
-      <section className="w-[98%] py-7 mt-12">
+      <section className="w-[98%] py-4 mt-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center items-stretch">
           <div className="flex flex-col items-center justify-start h-full transition-transform duration-300 hover:scale-105 p-4">
-            <TruckIcon className="w-16 h-16 text-[#eb9665] mb-4 transition-colors duration-300 hover:text-[#d97345]" />
+            <TruckIcon className="size-14 text-[#eb9665] mb-4 transition-colors duration-300 hover:text-[#d97345]" />
             <h3 className="font-semibold text-lg uppercase mb-2">Envío gratis a CABA</h3>
             <p className="text-gray-600 text-sm">Rápido y sin costo adicional.</p>
           </div>
 
           <div className="flex flex-col items-center justify-start h-full transition-transform duration-300 hover:scale-105 p-4">
-            <UserIcon className="w-16 h-16 text-[#eb9665] mb-4 transition-colors duration-300 hover:text-[#d97345]" />
+            <UserIcon className="size-14 text-[#eb9665] mb-4 transition-colors duration-300 hover:text-[#d97345]" />
             <h3 className="font-semibold text-lg uppercase mb-2">Atención personalizada</h3>
             <p className="text-gray-600 text-sm">Contactanos a través de Whatsapp, Instagram o correo electrónico!</p>
           </div>
 
           <div className="flex flex-col items-center justify-start h-full transition-transform duration-300 hover:scale-105 p-4">
-            <ShieldCheckIcon className="w-16 h-16 text-[#eb9665] mb-4 transition-colors duration-300 hover:text-[#d97345]" />
+            <ShieldCheckIcon className="size-14 text-[#eb9665] mb-4 transition-colors duration-300 hover:text-[#d97345]" />
             <h3 className="font-semibold text-lg uppercase mb-2">Resultados rápidos</h3>
             <p className="text-gray-600 text-sm">El tiempo de entrega es de 3 a 5 días hábiles.</p>
           </div>
 
           <div className="flex flex-col items-center justify-start h-full transition-transform duration-300 hover:scale-105 p-4">
-            <GiftIcon className="w-16 h-16 text-[#eb9665] mb-4 transition-colors duration-300 hover:text-[#d97345]" />
+            <GiftIcon className="size-14 text-[#eb9665] mb-4 transition-colors duration-300 hover:text-[#d97345]" />
             <h3 className="font-semibold text-lg uppercase mb-2">Garantía por defectos o roturas</h3>
             <p className="text-gray-600 text-sm">Tenés 10 días desde que recibís tu pedido para revisarlo.</p>
           </div>
@@ -104,6 +104,12 @@ const Home = () => {
         </div>
       </section>
 
+      {/* SECCION SEGUIR EN INSTAGRAM */}
+      <section className="w-[98%] mx-auto py-12 flex justify-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+          Seguinos en nuestro Instagram @mimuriok
+        </h2>
+      </section>
 
 
       <Footer />
