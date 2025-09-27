@@ -38,7 +38,7 @@ const Hero = () => {
       <img
         src={heroImages[currentIndex]}
         alt="Hero"
-        className="w-full h-full object-cover opacity-80 transition-all duration-700 rounded-xl"
+        className="w-full h-full object-cover transition-all duration-700 rounded-xl"
       />
 
       {/* Overlay para centrar texto */}
