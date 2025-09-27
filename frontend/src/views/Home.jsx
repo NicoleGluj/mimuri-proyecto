@@ -15,78 +15,90 @@ const Home = () => {
 
       <Hero />
 
-      {/* SECCION BENEFICIOS */}
-      <section className="w-[98%] mx-auto py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-          <div className="flex flex-col items-center">
-            <TruckIcon className="h-12 w-12 text-[#eb9665] mb-4" />
-            <h3 className="font-semibold text-lg">Envío gratis a CABA</h3>
-            <p className="text-gray-600 text-sm">Rápido y sin costo adicional</p>
+      <section className="w-[98%] py-7 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center items-stretch">
+          <div className="flex flex-col items-center justify-start h-full transition-transform duration-300 hover:scale-105 p-4">
+            <TruckIcon className="w-16 h-16 text-[#eb9665] mb-4 transition-colors duration-300 hover:text-[#d97345]" />
+            <h3 className="font-semibold text-lg uppercase mb-2">Envío gratis a CABA</h3>
+            <p className="text-gray-600 text-sm">Rápido y sin costo adicional.</p>
           </div>
 
-          <div className="flex flex-col items-center">
-            <UserIcon className="h-12 w-12 text-[#eb9665] mb-4" />
-            <h3 className="font-semibold text-lg">Atención personalizada</h3>
-            <p className="text-gray-600 text-sm">Estamos para ayudarte siempre</p>
+          <div className="flex flex-col items-center justify-start h-full transition-transform duration-300 hover:scale-105 p-4">
+            <UserIcon className="w-16 h-16 text-[#eb9665] mb-4 transition-colors duration-300 hover:text-[#d97345]" />
+            <h3 className="font-semibold text-lg uppercase mb-2">Atención personalizada</h3>
+            <p className="text-gray-600 text-sm">Contactanos a través de Whatsapp, Instagram o correo electrónico!</p>
           </div>
 
-          <div className="flex flex-col items-center">
-            <ShieldCheckIcon className="h-12 w-12 text-[#eb9665] mb-4" />
-            <h3 className="font-semibold text-lg">Compra segura</h3>
-            <p className="text-gray-600 text-sm">Pagos protegidos y confiables</p>
+          <div className="flex flex-col items-center justify-start h-full transition-transform duration-300 hover:scale-105 p-4">
+            <ShieldCheckIcon className="w-16 h-16 text-[#eb9665] mb-4 transition-colors duration-300 hover:text-[#d97345]" />
+            <h3 className="font-semibold text-lg uppercase mb-2">Resultados rápidos</h3>
+            <p className="text-gray-600 text-sm">El tiempo de entrega es de 3 a 5 días hábiles.</p>
           </div>
 
-          <div className="flex flex-col items-center">
-            <GiftIcon className="h-12 w-12 text-[#eb9665] mb-4" />
-            <h3 className="font-semibold text-lg">Regalos y promos</h3>
-            <p className="text-gray-600 text-sm">Beneficios exclusivos para vos</p>
+          <div className="flex flex-col items-center justify-start h-full transition-transform duration-300 hover:scale-105 p-4">
+            <GiftIcon className="w-16 h-16 text-[#eb9665] mb-4 transition-colors duration-300 hover:text-[#d97345]" />
+            <h3 className="font-semibold text-lg uppercase mb-2">Garantía por defectos o roturas</h3>
+            <p className="text-gray-600 text-sm">Tenés 10 días desde que recibís tu pedido para revisarlo.</p>
           </div>
         </div>
       </section>
+
 
       {/* SECCION BANNERS */}
       <section className="w-[98%] mx-auto py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Banner Sets */}
-          <div className="relative rounded-lg overflow-hidden shadow-lg">
-            <img src={setsImage} alt="Sets" className="w-full h-64 object-cover" />
-            <div className="absolute inset-0 bg-opacity-40 flex flex-col justify-center items-center text-white px-4">
-              <h3 className="text-2xl font-bold mb-2">Sets</h3>
-              <a
-                href="/sets"
-                className="bg-[#eb9665] px-4 py-2 rounded-full font-semibold hover:bg-[#d87c4a] transition"
-              >
-                Ver Sets
-              </a>
+          <div className="relative rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+            <img
+              src={setsImage}
+              alt="Sets"
+              className="w-full h-80 object-cover"
+            />
+            <div className="absolute bottom-0 w-full bg-white/60 bg-opacity-70 px-4 py-3 flex justify-center items-center">
+              <h3 className="text-xl font-bold uppercase text-[#d97345]">Combos</h3>
             </div>
+            <a
+              href="/sets"
+              className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-[#EEB749] bg-opacity-30 text-white text-lg font-semibold"
+            >
+              Ver Combos
+            </a>
           </div>
 
-          {/* Banner Bibliotecas */}
-          <div className="relative rounded-lg overflow-hidden shadow-lg">
-            <img src={bibliotecasImage} alt="Bibliotecas" className="w-full h-64 object-cover" />
-            <div className="absolute inset-0 bg-opacity-40 flex flex-col justify-center items-center text-white px-4">
-              <h3 className="text-2xl font-bold mb-2">Bibliotecas</h3>
-              <a
-                href="/bibliotecas"
-                className="bg-[#eb9665] px-4 py-2 rounded-full font-semibold hover:bg-[#d87c4a] transition"
-              >
-                Ver Bibliotecas
-              </a>
+          {/* Banner Jugueteros */}
+          <div className="relative rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+            <img
+              src={bibliotecasImage}
+              alt="Bibliotecas"
+              className="w-full h-80 object-cover"
+            />
+            <div className="absolute bottom-0 w-full bg-white/60 bg-opacity-70 px-4 py-3 flex justify-center items-center">
+              <h3 className="text-xl font-bold uppercase text-[#d97345]">Jugueteros</h3>
             </div>
+            <a
+              href="/bibliotecas"
+              className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-[#A4CBC7] bg-opacity-30 text-white text-lg font-semibold"
+            >
+              Ver Jugueteros
+            </a>
           </div>
 
-          {/* Banner Todos los productos */}
-          <div className="relative rounded-lg overflow-hidden shadow-lg">
-            <img src={todosImage} alt="Todos los productos" className="w-full h-64 object-cover" />
-            <div className="absolute inset-0 bg-opacity-40 flex flex-col justify-center items-center text-white px-4">
-              <h3 className="text-2xl font-bold mb-2">Todos los productos</h3>
-              <a
-                href="/productos"
-                className="bg-[#eb9665] px-4 py-2 rounded-full font-semibold hover:bg-[#d87c4a] transition"
-              >
-                Ver Productos
-              </a>
+          {/* Banner Productos */}
+          <div className="relative rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+            <img
+              src={todosImage}
+              alt="Todos los productos"
+              className="w-full h-80 object-cover"
+            />
+            <div className="absolute bottom-0 w-full bg-white/60 bg-opacity-70 px-4 py-3 flex justify-center items-center">
+              <h3 className="text-xl font-bold uppercase text-[#d97345]">Productos</h3>
             </div>
+            <a
+              href="/productos"
+              className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-[#F0655E] bg-opacity-30 text-white text-lg font-semibold"
+            >
+              Ver Productos
+            </a>
           </div>
         </div>
       </section>

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import biblioteca from "../assets/images/carrousel/biblioteca.png";
 import combo from "../assets/images/carrousel/combo.png";
 import espacio from "../assets/images/carrousel/espacio.png";
+import { Link } from "react-router-dom";
 
 const heroImages = [biblioteca, combo, espacio];
 
@@ -33,8 +34,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-[98%] h-[80vh] mx-auto overflow-hidden rounded-xl shadow-lg">
-      {/* Imagen de fondo con opacidad */}
+    <section className="relative w-[98%] h-[85vh] mx-auto overflow-hidden rounded-xl shadow-lg mt-2">
       <img
         src={heroImages[currentIndex]}
         alt="Hero"
@@ -42,19 +42,18 @@ const Hero = () => {
       />
 
       {/* Overlay para centrar texto */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 uppercase">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg ">
           Bienvenidos a Mimuri
         </h1>
         <p className="text-lg md:text-2xl mb-6 drop-shadow-md">
           Descubrí nuestros productos únicos
         </p>
-        <a
-          href="#productos"
-          className="bg-[#eb9665] bg-opacity-90 px-6 py-3 rounded-full font-semibold hover:bg-[#d87c4a] transition"
-        >
+        <Link
+          to="/productos"
+          className="bg-[#9373AC] bg-opacity-90 px-6 py-3 rounded-full font-semibold hover:bg-[#d87c4a] transition">
           Ver Productos
-        </a>
+        </Link>
       </div>
 
       {/* Botones de navegación */}

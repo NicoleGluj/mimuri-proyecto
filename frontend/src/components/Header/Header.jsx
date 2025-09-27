@@ -14,7 +14,7 @@ const Header = () => {
     <header>
       <TopBar />
 
-      <div className="relative flex items-center px-2 py-2 bg-white">
+      <div className="relative flex items-center px-4 py-2 bg-white mt-2">
         {/* Logo a la izquierda */}
         <div className="flex-shrink-0">
           <img
