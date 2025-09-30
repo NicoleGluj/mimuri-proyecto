@@ -10,7 +10,7 @@ const TopBar = () => {
   const generateRepeatedText = () => {
     if (!containerRef.current) return "";
     const containerWidth = containerRef.current.offsetWidth;
-    const originalText = "Envio gratis en CABA + 3 cuotas sin interes";
+    const originalText = "Envio gratis en CABA";
     let repeated = originalText + " \u00A0 \u00A0 ";
     let temp = repeated;
 

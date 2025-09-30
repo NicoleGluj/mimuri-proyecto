@@ -111,7 +111,6 @@ const Home = () => {
         </h2>
       </section>
 
-
       <Footer />
     </>
   );
