@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import TopBar from "./TopBar";
+import TopBar from "../header/TopBar";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const Header = () => {
@@ -29,7 +29,7 @@ const Header = () => {
           <ul className="flex justify-center space-x-6 text-gray-500 font-medium text-sm uppercase">
             <li>
               <Link to="/" className="hover:text-[#eb9665]">
-                Inicioooo
+                Inicio
               </Link>
             </li>
             <li>
