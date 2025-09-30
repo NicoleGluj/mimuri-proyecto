@@ -1,4 +1,4 @@
-import Header from "../components/header/Header";
+import Header from "../components/header/Header.jsx";
 import Footer from "../components/Footer";
 import tallerImage from "../assets/images/carrousel/biblioteca.png";
 import productosImage from "../assets/images/carrousel/combo.png";

@@ -1,4 +1,4 @@
-import Header from "../components/header/Header";
+import Header from "../components/header/Header.jsx";
 import Footer from "../components/Footer";
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/outline";
 
