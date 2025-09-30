@@ -1,4 +1,4 @@
-import Header from "../components/headerr/Header.jsx";
+import Header from "../components/header/Header.jsx";
 import Hero from "../components/Hero";
 import { TruckIcon, UserIcon, ShieldCheckIcon, GiftIcon } from "@heroicons/react/24/outline";
 
