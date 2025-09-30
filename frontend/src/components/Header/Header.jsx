@@ -29,7 +29,7 @@ const Header = () => {
           <ul className="flex justify-center space-x-6 text-gray-500 font-medium text-sm uppercase">
             <li>
               <Link to="/" className="hover:text-[#eb9665]">
-                Inicio
+                Inicioooo
               </Link>
             </li>
             <li>
