@@ -91,7 +91,7 @@ const Contacto = () => {
                 type="submit"
                 className="bg-[#eb9665] text-white font-semibold px-6 py-2 rounded-xl transition-all duration-300 hover:bg-[#d97345] hover:scale-105"
               >
-                Enviar mensaje
+                Enviar mensaje.
               </button>
             </div>
           </form>
