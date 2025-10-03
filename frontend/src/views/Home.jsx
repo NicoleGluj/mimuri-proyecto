@@ -16,7 +16,7 @@ const Home = () => {
       <Hero />
 
       {/* SECCION ICONOS */}
-      <section className="container mx-auto px-4 py-4 mt-12">
+      <section className="container mx-auto px-4 py-6  mt-6 md:mt-13">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center items-stretch">
           <div className="flex flex-col items-center justify-start h-full transition-transform duration-300 hover:scale-105 p-4">
             <TruckIcon className="size-14 text-[#eb9665] mb-4 transition-colors duration-300 hover:text-[#d97345]" />
@@ -49,7 +49,7 @@ const Home = () => {
       </section>
 
       {/* SECCION BANNERS */}
-      <section className="container mx-auto px-4 py-12">
+      <section className="w-full px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Banner Sets */}
           <div className="relative rounded-lg overflow-hidden shadow-lg group cursor-pointer">
@@ -95,8 +95,74 @@ const Home = () => {
         </div>
       </section>
 
+      {/* SECCIÓN OPINIONES - CENTRADO CORRECTO */}
+      <section className="w-auto bg-gray-100 py-12 px-4 mx-4 rounded-2xl">
+        <div className="max-w-6xl mx-auto">
+          {/* Título */}
+          <h2 className="text-2xl md:text-3xl font-bold text-[#d97345] text-center mb-8">
+            Lo que dicen nuestros clientes
+          </h2>
+
+          {/* Contenedor centrado */}
+          <div className="flex flex-col md:flex-row justify-center gap-6">
+            {/* Columna izquierda - dos testimonios apilados */}
+            <div className="flex flex-col gap-6">
+              <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
+                <div>
+                  <div className="flex mb-2 justify-center md:justify-start">
+                    <span className="text-yellow-400 mr-1">★</span>
+                    <span className="text-yellow-400 mr-1">★</span>
+                    <span className="text-yellow-400 mr-1">★</span>
+                    <span className="text-yellow-400 mr-1">★</span>
+                    <span className="text-yellow-400">★</span>
+                  </div>
+                  <p className="text-gray-700 mb-2 text-center md:text-left">
+                    "Me encantaron los productos, la entrega fue rápida y todo llegó perfecto."
+                  </p>
+                </div>
+                <span className="font-semibold text-gray-800 block text-center md:text-left">– Sofía</span>
+              </div>
+
+              <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
+                <div>
+                  <div className="flex mb-2 justify-center md:justify-start">
+                    <span className="text-yellow-400 mr-1">★</span>
+                    <span className="text-yellow-400 mr-1">★</span>
+                    <span className="text-yellow-400 mr-1">★</span>
+                    <span className="text-yellow-400 mr-1">★</span>
+                    <span className="text-yellow-400">☆</span>
+                  </div>
+                  <p className="text-gray-700 mb-2 text-center md:text-left">
+                    "La calidad y el diseño son excelentes. Los muebles de Mimuri hicieron que el cuarto de mi hijo se vea increíble."
+                  </p>
+                </div>
+                <span className="font-semibold text-gray-800 block text-center md:text-left">– Lucas</span>
+              </div>
+            </div>
+
+            {/* Columna derecha - testimonio grande */}
+            <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
+              <div>
+                <div className="flex mb-2 justify-center md:justify-start">
+                  <span className="text-yellow-400 mr-1">★</span>
+                  <span className="text-yellow-400 mr-1">★</span>
+                  <span className="text-yellow-400 mr-1">★</span>
+                  <span className="text-yellow-400 mr-1">★</span>
+                  <span className="text-yellow-400">★</span>
+                </div>
+                <p className="text-gray-700 mb-2 text-center md:text-left">
+                  "Productos hermosos y duraderos, con una atención al cliente increíble. Sin dudas volveré a comprar."
+                </p>
+              </div>
+              <span className="font-semibold text-gray-800 block text-center md:text-left">– Martina</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* SECCION SEGUIR EN INSTAGRAM */}
-      <section className="container mx-auto px-4 py-12 flex justify-center">
+      <section className="container mx-auto px-4 py-8 md:py-12 flex justify-center">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
           Seguinos en nuestro Instagram @mimuriok
         </h2>

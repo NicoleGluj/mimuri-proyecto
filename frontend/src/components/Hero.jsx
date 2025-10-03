@@ -34,7 +34,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative container mx-auto px-4 h-[85vh] max-w-full">
+    <section className="relative container mx-auto px-4 h-[85vh] max-w-full mt-3">
       <img
         src={heroImages[currentIndex]}
         alt="Hero"
