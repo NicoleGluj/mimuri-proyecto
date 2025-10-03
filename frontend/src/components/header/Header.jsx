@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import TopBar from "./TopBar";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import logoMimuri from "../assets/logo/logo-mimuri.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,11 +18,7 @@ const Header = () => {
       <div className="relative flex items-center px-4 py-2 bg-white mt-2">
         {/* Logo a la izquierda */}
         <div className="flex-shrink-0">
-          <img
-            src="../src/assets/logo/logo-mimuri.png"
-            alt="logo mimuri"
-            className="w-40"
-          />
+          <img src={logoMimuri} alt="logo mimuri" className="w-40" />
         </div>
 
         {/* Navegación para pantallas grandes */}
