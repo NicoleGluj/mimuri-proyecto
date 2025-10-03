@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import TopBar from "./TopBar";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logoMimuri from "../assets/logo/logo-mimuri.png";
+import logoMimuri from "../../assets/logo/logo-mimuri.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
