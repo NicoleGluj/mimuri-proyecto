@@ -34,7 +34,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-[98%] h-[85vh] mx-auto overflow-hidden rounded-xl shadow-lg mt-2">
+    <section className="relative container mx-auto px-4 h-[85vh] max-w-full">
       <img
         src={heroImages[currentIndex]}
         alt="Hero"
@@ -43,32 +43,28 @@ const Hero = () => {
 
       {/* Overlay para centrar texto */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 uppercase">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg ">
+        <h1 className="text-3xl md:text-6xl font-bold mb-4 drop-shadow-lg">
           Bienvenidos a Mimuri
         </h1>
-        <p className="text-lg font-mono md:text-2xl mb-6 drop-shadow-md">
+        <p className="text-base md:text-2xl mb-6 drop-shadow-md">
           Diseño que acompaña la infancia
         </p>
-        {/* <Link
-          to="/productos"
-          className="bg-[#9373AC] bg-opacity-90 px-6 py-3 rounded-full font-semibold hover:bg-[#d87c4a] transition">
-          Ver Productos
-        </Link> */}
       </div>
 
       {/* Botones de navegación */}
       <button
         onClick={goToPrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-80 rounded-full p-2"
+        className="absolute left-2 sm:left-6 md:left-10 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-80 rounded-full p-2"
       >
         &#10094;
       </button>
       <button
         onClick={goToNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-80 rounded-full p-2"
+        className="absolute right-2 sm:right-6 md:right-10 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-80 rounded-full p-2"
       >
         &#10095;
       </button>
+
 
       {/* Indicadores */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
